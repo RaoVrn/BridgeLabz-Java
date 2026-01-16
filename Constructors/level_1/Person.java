@@ -3,17 +3,17 @@ Problem Statement:
 Create a Person class with a copy constructor that clones another person's attributes.
 */
 
-class Person {
+class PersonDetails {
     private String name;
     private int age;
 
-    public Person(String name, int age) {
+    public PersonDetails(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
     // Copy constructor
-    public Person(Person p) {
+    public PersonDetails(PersonDetails p) {
         this.name = p.name;
         this.age = p.age;
     }
@@ -23,10 +23,10 @@ class Person {
     }
 }
 
-public class Main {
+public class Person {
     public static void main(String[] args) {
-        Person p1 = new Person("Varun", 21);
-        Person p2 = new Person(p1);
+        PersonDetails p1 = new PersonDetails("Varun", 21);
+        PersonDetails p2 = new PersonDetails(p1);
 
         p2.display();
     }

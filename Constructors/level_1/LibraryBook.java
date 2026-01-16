@@ -4,13 +4,13 @@ Create a Book class with attributes title, author, price, and availability.
 Implement a method to borrow a book.
 */
 
-class LibraryBook {
+class LibraryBookDetails {
     private String title;
     private String author;
     private double price;
     private boolean available;
 
-    public LibraryBook(String title, String author, double price) {
+    public LibraryBookDetails(String title, String author, double price) {
         this.title = title;
         this.author = author;
         this.price = price;
@@ -27,9 +27,9 @@ class LibraryBook {
     }
 }
 
-public class Main {
+public class LibraryBook {
     public static void main(String[] args) {
-        LibraryBook book = new LibraryBook("Java", "James", 400);
+        LibraryBookDetails book = new LibraryBookDetails("Java", "James", 400);
         book.borrowBook();
         book.borrowBook();
     }

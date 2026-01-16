@@ -4,12 +4,12 @@ Create a Product class with instance variables productName, price
 and class variable totalProducts.
 */
 
-class Product {
+class ProductDetails {
     private String productName;
     private double price;
     private static int totalProducts = 0;
 
-    public Product(String productName, double price) {
+    public ProductDetails(String productName, double price) {
         this.productName = productName;
         this.price = price;
         totalProducts++;
@@ -24,11 +24,11 @@ class Product {
     }
 }
 
-public class Main {
+public class Product {
     public static void main(String[] args) {
-        new Product("Pen", 10);
-        new Product("Book", 50);
+        new ProductDetails("Pen", 10);
+        new ProductDetails("Book", 50);
 
-        Product.displayTotalProducts();
+        ProductDetails.displayTotalProducts();
     }
 }

@@ -4,22 +4,22 @@ Create a HotelBooking class with attributes guestName, roomType, and nights.
 Use default, parameterized, and copy constructors.
 */
 
-class HotelBooking {
+class HotelBookingDetails {
     private String guestName;
     private String roomType;
     private int nights;
 
-    public HotelBooking() {
+    public HotelBookingDetails() {
         this("Guest", "Standard", 1);
     }
 
-    public HotelBooking(String guestName, String roomType, int nights) {
+    public HotelBookingDetails(String guestName, String roomType, int nights) {
         this.guestName = guestName;
         this.roomType = roomType;
         this.nights = nights;
     }
 
-    public HotelBooking(HotelBooking booking) {
+    public HotelBookingDetails(HotelBookingDetails booking) {
         this(booking.guestName, booking.roomType, booking.nights);
     }
 
@@ -28,10 +28,10 @@ class HotelBooking {
     }
 }
 
-public class Main {
+public class HotelBooking {
     public static void main(String[] args) {
-        HotelBooking b1 = new HotelBooking("Varun", "Deluxe", 3);
-        HotelBooking b2 = new HotelBooking(b1);
+        HotelBookingDetails b1 = new HotelBookingDetails("Varun", "Deluxe", 3);
+        HotelBookingDetails b2 = new HotelBookingDetails(b1);
 
         b2.display();
     }

@@ -4,20 +4,20 @@ Create a Book class with attributes title, author, and price.
 Provide both default and parameterized constructors.
 */
 
-class Book {
+class BookDetails {
     private String title;
     private String author;
     private double price;
 
     // Default constructor
-    public Book() {
+    public BookDetails() {
         this.title = "Unknown";
         this.author = "Unknown";
         this.price = 0.0;
     }
 
     // Parameterized constructor
-    public Book(String title, String author, double price) {
+    public BookDetails(String title, String author, double price) {
         this.title = title;
         this.author = author;
         this.price = price;
@@ -28,10 +28,10 @@ class Book {
     }
 }
 
-public class Main {
+public class Book {
     public static void main(String[] args) {
-        Book b1 = new Book();
-        Book b2 = new Book("Java", "James Gosling", 499);
+        BookDetails b1 = new BookDetails();
+        BookDetails b2 = new BookDetails("Java", "James Gosling", 499);
 
         b1.displayDetails();
         b2.displayDetails();

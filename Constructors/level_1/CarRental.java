@@ -4,12 +4,12 @@ Create a CarRental class with attributes customerName, carModel, rentalDays.
 Calculate total cost.
 */
 
-class CarRental {
+class CarRentalDetails {
     private String customerName;
     private String carModel;
     private int rentalDays;
 
-    public CarRental(String customerName, String carModel, int rentalDays) {
+    public CarRentalDetails(String customerName, String carModel, int rentalDays) {
         this.customerName = customerName;
         this.carModel = carModel;
         this.rentalDays = rentalDays;
@@ -24,9 +24,9 @@ class CarRental {
     }
 }
 
-public class Main {
+public class CarRental {
     public static void main(String[] args) {
-        CarRental rental = new CarRental("Varun", "Swift", 4);
+        CarRentalDetails rental = new CarRentalDetails("Varun", "Swift", 4);
         rental.display();
     }
 }

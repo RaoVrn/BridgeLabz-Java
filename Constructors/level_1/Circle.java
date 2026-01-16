@@ -4,16 +4,16 @@ Write a Circle class with a radius attribute.
 Use constructor chaining to initialize radius with default and user-provided values.
 */
 
-class Circle {
+class CircleDetails {
     private double radius;
 
     // Default constructor
-    public Circle() {
+    public CircleDetails() {
         this(1.0); // Constructor chaining
     }
 
     // Parameterized constructor
-    public Circle(double radius) {
+    public CircleDetails(double radius) {
         this.radius = radius;
     }
 
@@ -22,10 +22,10 @@ class Circle {
     }
 }
 
-public class Main {
+public class Circle {
     public static void main(String[] args) {
-        Circle c1 = new Circle();
-        Circle c2 = new Circle(5);
+        CircleDetails c1 = new CircleDetails();
+        CircleDetails c2 = new CircleDetails(5);
 
         System.out.println(c1.area());
         System.out.println(c2.area());
